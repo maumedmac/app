@@ -22,7 +22,12 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Primer App"),
+          title: Row(
+            children: <Widget>[
+              Icon(Icons.arrow_back),
+              Text(" Share")
+            ],
+          )
         ),
         body: Center(
           child: Text("Hola desde Platzi"),
